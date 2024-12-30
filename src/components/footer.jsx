@@ -23,21 +23,21 @@ export default function footer() {
                 </p>
                 <div className="flex items-center gap-3">
                   <a href="https://t.me/kojokwarteng">
-                    <FaTelegram className='text-white'/>
+                    <FaTelegram className='text-white text-2xl'/>
                   </a>
                   <a href="https://twitter.com/kojokwarteng_">
 
-                    <FaSquareXTwitter className='text-white' />
+                    <FaSquareXTwitter className='text-white text-2xl' />
                   </a>
                   <a href="https://wa.me/233561790240
 ">
       
-                    <FaWhatsappSquare className='text-white'/>
+                    <FaWhatsappSquare className='text-white text-2xl'/>
                   </a>
 
                   <a href="https://www.instagram.com/kojo_kwartz?igsh=MWh1a3YxcW9rZGV3bA==">
 
-                    <FaInstagramSquare className='text-white'/>
+                    <FaInstagramSquare className='text-white text-2xl'/>
                   </a>
                 </div>
               </div>
