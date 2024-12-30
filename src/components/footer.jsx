@@ -17,25 +17,25 @@ export default function footer() {
                   className="logo text-white flex items-center gap-2 font-ClashDisplayMed capitalize text-xl"
                 >
                   <img src="image.png" alt="" className="w-[2rem] sm:w-[2rem]" />
-                  <h2 className="hin">KOJO KWARTENG</h2>
                 </a>
                 <p className="text-white text-sm font-normal font-['Clash Display'] leading-relaxed">
                   Copyright © {new Date().getFullYear()} All Rights Reserved.
                 </p>
                 <div className="flex items-center gap-3">
-                  <a href="https://t.me/GROKonTABS">
+                  <a href="https://t.me/kojokwarteng">
                     <FaTelegram className='text-white'/>
                   </a>
-                  <a href="https://twitter.com/GROKonLSD">
+                  <a href="https://twitter.com/kojokwarteng_">
 
                     <FaSquareXTwitter className='text-white' />
                   </a>
-                  <a href="">
+                  <a href="https://wa.me/233561790240
+">
       
                     <FaWhatsappSquare className='text-white'/>
                   </a>
 
-                  <a href="">
+                  <a href="https://www.instagram.com/kojo_kwartz?igsh=MWh1a3YxcW9rZGV3bA==">
 
                     <FaInstagramSquare className='text-white'/>
                   </a>

@@ -6,6 +6,8 @@ import Slider from './components/slider';
 import Header from './components/header';
 import Services from "./components/services.jsx"
 import Testimonials from './components/testimonials';
+import Gallery from './components/gallery';
+import Banner from './components/banner';
 
 function App() {
 
@@ -13,9 +15,11 @@ function App() {
   return (
     <>
      <Header/>
-     <Testimonials/>
+     <Banner/>
+     <Gallery/>
      <Services/>
      <Slider/>
+     <Testimonials/>
      <Footer/>
     </>
   )

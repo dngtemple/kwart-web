@@ -76,7 +76,7 @@ const HeaderBlock = () => (
       </span>
     </h1>
     <a
-      href="#"
+      href="https://forms.gle/irj4RT1jDB88iwG26"
       className="flex items-center gap-1 text-red-300 hover:underline"
     >
       Contact me <FiArrowRight />

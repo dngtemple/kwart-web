@@ -14,7 +14,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Slider() {
  
-  const localImages = ["/p13.jpg", "/p9.jpg", "/p10.jpg", "/p11.jpg", "/p12.jpg"];
+  const localImages = ["/p24.jpg", "/p17.jpg", "/p10.jpg", "/p25.jpg", "/p19.jpg"];
 
   return (
     <Carousel className="w-full bg-gray-900">
@@ -23,11 +23,11 @@ export default function Slider() {
           <CarouselItem key={index}>
             <div className="p-1">
               <Card>
-                <CardContent className="relative w-full  h-52 sm:h-96">
+                <CardContent className="relative w-full  h-72 sm:h-96 ">
                   <img
                     src={imagePath}
                     alt={`Slide ${index + 1}`}
-                    className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                    className="absolute top-0 left-0 w-full h-full object-cover rounded-lg "
                   />
                 </CardContent>
               </Card>

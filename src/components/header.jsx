@@ -5,6 +5,30 @@ import React from "react";
 
 
 export default function header() {
+
+  function scrollToPosition() {
+    const deviceWidth = window.innerWidth;
+  
+    if (deviceWidth <= 768) {
+      // For mobile devices
+      window.scroll({
+        top: 5000, // Scroll to 300px from the top
+        behavior: 'smooth'
+      });
+    } else if (deviceWidth <= 1024) {
+      // For tablets
+      window.scroll({
+        top: 4000, // Scroll to 500px from the top
+        behavior: 'smooth'
+      });
+    } else {
+      // For desktops
+      window.scroll({
+        top: 3000, // Scroll to 800px from the top
+        behavior: 'smooth'
+      });
+    }
+  }
   return (
     <>
     <div class="bg-white">
@@ -21,12 +45,18 @@ export default function header() {
     </label>
     <div class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
       <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
-        <li class="md:mr-12 text-sm"><a href="#">Gallery View</a></li>
-        <li class="md:mr-12 text-sm"><a href="#">Services</a></li>
-        <li class="md:mr-12 text-sm"><a href="#">Contact me</a></li>
-        {/* <li class="md:mr-12">
-          <button class="rounded-full border-2 border-cyan-500 px-6 py-1 text-cyan-600 transition-colors hover:bg-cyan-500 hover:text-white">Login</button>
-        </li> */}
+        <li onClick={function(){
+          window.scroll({
+            top: 1000,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }} class="md:mr-12 text-sm">Gallery View</li>
+        <li onClick={function(){
+         scrollToPosition()
+        }} class="md:mr-12 text-sm">Services</li>
+        <li class="md:mr-12 text-sm"><a href="https://forms.gle/irj4RT1jDB88iwG26">Contact me</a></li>
+        
       </ul>
     </div>
   </div>
