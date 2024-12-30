@@ -17,7 +17,7 @@ export default function Slider() {
   const localImages = ["/p13.jpg", "/p9.jpg", "/p10.jpg", "/p11.jpg", "/p12.jpg"];
 
   return (
-    <Carousel className="w-full ">
+    <Carousel className="w-full bg-gray-900">
       <CarouselContent>
         {localImages.map((imagePath, index) => (
           <CarouselItem key={index}>
