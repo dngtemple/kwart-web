@@ -8,7 +8,7 @@ import { GiCommercialAirplane } from "react-icons/gi";
 import { FaPortrait } from "react-icons/fa";
 import { BiMaleFemale } from "react-icons/bi";
 
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const services = () => {
@@ -89,31 +89,41 @@ const HeaderBlock = () => (
 
 
 const LocationBlock = () => (
+
+  <Link to="/wedding" className="contents">
   <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-3 hover:bg-neutral-700">
     <BiMaleFemale className="text-3xl" />
     <p className="text-center text-l text-zinc-400">Wedding Photography</p>
   </Block>
+  </Link>
 );
 
 const LocationBlock1 = () => (
+  <Link to="/graduation" className="contents">
+
   <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-3 hover:bg-neutral-700">
     <FaGraduationCap className="text-3xl" />
     <p className="text-center text-l text-zinc-400">Graduation Photography</p>
   </Block>
-);
+  </Link>);
 
 const LocationBlock2 = () => (
+  <Link to="/travel" className="contents">
+
   <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-3 hover:bg-neutral-700">
     <GiCommercialAirplane className="text-3xl" />
     <p className="text-center text-l text-zinc-400">Travel Photography</p>
   </Block>
+  </Link>
 );
 
 const LocationBlock3 = () => (
+  <Link to="/portraits" className="contents">
   <Block   className="col-span-12 flex flex-col items-center gap-4 md:col-span-3 hover:bg-neutral-700">
     <FaPortrait className="text-3xl" />
     <p  className="text-center text-l text-zinc-400">Portraits</p>
   </Block>
+  </Link>
 );
 
 

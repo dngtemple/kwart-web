@@ -47,7 +47,7 @@ const WeddingGallery = () => {
 
   return (
     <div>
-      <h1 className="text-center text-white text-2xl \ my-4 mt-10">Explore Wedding Stunning Photography </h1>
+      <h1 className="text-center text-white text-2xl \ my-4 mt-10">Wedding Photos  </h1>
       <ResponsiveImageGrid images={images} />
       <Footer/>
 

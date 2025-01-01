@@ -47,7 +47,7 @@ const GraduationGallery = () => {
 
   return (
     <div>
-      <h1 className="text-center text-white text-2xl \ my-4 mt-10">Graduation  Photography </h1>
+      <h1 className="text-center text-white text-2xl \ my-4 mt-10">Graduation Photos </h1>
       <ResponsiveImageGrid images={images} />
       <Footer/>
 
