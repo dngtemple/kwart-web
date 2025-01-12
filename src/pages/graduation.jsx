@@ -1,8 +1,14 @@
 import React from "react";
 import Footer from "@/components/footer";
+import { FaBackward, FaBackwardStep } from "react-icons/fa6";
+import { IoMdArrowBack } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const ResponsiveImageGrid = ({ images }) => {
+
   return (
+    <>
+
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4">
       {images.map((image, index) => (
         <div
@@ -17,11 +23,14 @@ const ResponsiveImageGrid = ({ images }) => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 
 // Example usage
 const GraduationGallery = () => {
+  const navigate = useNavigate();
+
   const images = [
     { url: "p8.jpg", alt: "Placeholder 1", size: "" },
     { url: "p6.jpg", alt: "Placeholder 2", size: "col-span-2" },
@@ -47,6 +56,10 @@ const GraduationGallery = () => {
 
   return (
     <div>
+      <IoMdArrowBack className="text-white text-xl m-5" onClick={function(){
+        navigate(-1);
+      }} />
+       
       <h1 className="text-center text-white text-2xl \ my-4 mt-10">Graduation Photos </h1>
       <ResponsiveImageGrid images={images} />
       <Footer/>

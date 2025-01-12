@@ -30,8 +30,9 @@ function App() {
             <>
             <Header/>
             <Banner/>
-            <Gallery/>
             <Services/>
+            <Gallery/>
+            <div className='mt-10'></div>
             <Slider/>
             <Testimonials/>
             <Footer/>

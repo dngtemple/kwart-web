@@ -55,7 +55,7 @@ export default function header() {
         <li onClick={function(){
          scrollToPosition()
         }} class="md:mr-12 text-sm">Services</li>
-        <li class="md:mr-12 text-sm"><a href="https://forms.gle/irj4RT1jDB88iwG26">Contact me</a></li>
+        <li class="md:mr-12 text-sm"><a href="https://docs.google.com/forms/d/1h2ixT9YGVkMjTj_pNQ0VjtbP0zbqzQMokKJS-pra6wM">Contact me</a></li>
         
       </ul>
     </div>
