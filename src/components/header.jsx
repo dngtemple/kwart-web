@@ -12,19 +12,19 @@ export default function header() {
     if (deviceWidth <= 768) {
       // For mobile devices
       window.scroll({
-        top: 5000, // Scroll to 300px from the top
+        top: 850, // Scroll to 300px from the top
         behavior: 'smooth'
       });
     } else if (deviceWidth <= 1024) {
       // For tablets
       window.scroll({
-        top: 4000, // Scroll to 500px from the top
+        top: 750, // Scroll to 500px from the top
         behavior: 'smooth'
       });
     } else {
       // For desktops
       window.scroll({
-        top: 3000, // Scroll to 800px from the top
+        top: 750, // Scroll to 800px from the top
         behavior: 'smooth'
       });
     }
@@ -47,7 +47,7 @@ export default function header() {
       <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
         <li onClick={function(){
           window.scroll({
-            top: 1000,
+            top: 2000,
             left: 0,
             behavior: 'smooth'
           });
